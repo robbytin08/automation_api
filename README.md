@@ -6,6 +6,5 @@ Step to use this FW:
 1. Clone
 2. npm install
 3. npm run test-api 
-
-For Show Report npm run reports
+4. npm run reports
 
