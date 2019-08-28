@@ -16,12 +16,12 @@ describe(`Testing API get Calender holiday`, () => {
     const key = '5adbf3b69e48a83aaa1c5d2e23383f0b7fa7f34e';
 
     it(`@get ${testCase.positive.holidayInIndonesa}`, async () => {
-        const response = await page.getCalenderHoliday(key, data.datavalid);
+        const response = await page.getCalenderHoliday(data.datavalid);
         assert(response.status).to.equal(200);
     });
 
     it(`@get ${testCase.negative.apiKeyInvalid}`, async () => {
-        const response = await page.getCalenderHoliday('as7hjas6', data.invalidKey);
+        const response = await page.getCalenderHoliday(data.invalidKey);
         assert(response.status).to.equal(401);
     });
 }) 
