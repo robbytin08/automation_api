@@ -1,0 +1,10 @@
+{
+    "datavalid": {
+        "country": "ID",
+        "year": "2019"
+    },
+    "invalidKey": {
+        "country": "ID",
+        "year": "2018"
+    }
+}
