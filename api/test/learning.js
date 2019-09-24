@@ -19,14 +19,6 @@ describe(`Testing API get Calender holiday`, () => {
 
     describe(`Positif Testing API get Calender holiday`, () => {
 
-        it(`@get ${testCase.positive.holidayInIndonesa}`, async () => {
-            const response = await page.getCalenderHoliday(data.datavalid);
-            assert(response.status).to.equal(200);
-            assert(response.body.response.holidays[0].name).to.equal(value.responseValue.newYear)
-            assert(response.body.response.holidays[22].name).to.equal(value.responseValue.Independence)
-            assert(response.body.response.holidays[22].date.iso).to.equal('2019-08-17')
-        });
-
         it(`@get ${testCase.positive.holiday2018}`, async () => {
             const response = await page.getCalenderHoliday(data.holiday2018);
             assert(response.status).to.equal(200);
